@@ -1,1 +1,10 @@
-/* No CSS yet!*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Display: none; */
+header, #about, #portfolio, #contact, footer {
+    display: none;
+}
