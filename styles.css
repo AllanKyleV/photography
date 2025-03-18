@@ -21,8 +21,9 @@
     left: 0;
     width: 100%;
     backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255); /*,0.2*/
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 2px 2px 15px gray;
     z-index: 1000;
 }
 
@@ -121,6 +122,48 @@ button:hover {
     color: black;
 }
 
+/* About Section*/
+#about {
+    display: flex;
+    height: 100vh;
+    font-family: var(--font-default);
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-left {
+    flex: 1;
+    padding: 100px;
+    min-width: 500px;
+}
+
+.about-left > h3, p {
+    padding-bottom: 20px;
+}
+
+.about-left > button {
+    display: flex;
+    justify-self: center;
+}
+
+.about-left h3 {
+    font-size: 32px;
+}
+
+.about-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-right img {
+    max-width: 80%;
+    min-width: 400px;
+}
+
 /* Media Query for Responsiveness */
 @media (max-width: 768px) {
 
@@ -161,9 +204,16 @@ button:hover {
     #hero > p {
         display: none;
     }
+
+    /* About Section*/
+    #about .about-left{
+        max-width: 100%;
+        min-width: 400px;
+        padding: 50px;
+    }
 }
 
 /* Display: none; */
-#about, #portfolio, #contact, footer {
+#portfolio, #contact, footer {
     display: none;
 }
