@@ -125,12 +125,12 @@ button:hover {
 /* About Section*/
 #about {
     display: flex;
-    height: 100vh;
     font-family: var(--font-default);
     text-align: justify;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 
 .about-left {
@@ -139,7 +139,11 @@ button:hover {
     min-width: 500px;
 }
 
-.about-left > h3, p {
+.about-left img {
+    min-width: 100%;
+}
+
+p {
     padding-bottom: 20px;
 }
 
@@ -148,8 +152,9 @@ button:hover {
     justify-self: center;
 }
 
-.about-left h3 {
+h3 {
     font-size: 32px;
+    padding-bottom: 20px;
 }
 
 .about-right {
@@ -160,9 +165,36 @@ button:hover {
 }
 
 .about-right img {
-    max-width: 80%;
-    min-width: 400px;
+    max-width: 500px;
 }
+
+/* Portfolio Section */
+#portfolio {
+    font-family: var(--font-default);
+    padding: 0 100px;
+    min-height: 800px;
+}
+
+#portfolio img {
+    width: 100%;
+    max-width: 340px;
+    min-width: auto;
+}
+
+.portfolio-detail {
+    max-width: 100%;
+}
+
+#portfolio .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contact Section */
+
 
 /* Media Query for Responsiveness */
 @media (max-width: 768px) {
@@ -206,14 +238,19 @@ button:hover {
     }
 
     /* About Section*/
-    #about .about-left{
+    #about .about-left {
         max-width: 100%;
-        min-width: 400px;
         padding: 50px;
+    }
+    /* Portfolio Section */
+
+    #portfolio {
+        padding: 20px 50px;
     }
 }
 
+
 /* Display: none; */
-#portfolio, #contact, footer {
+footer {
     display: none;
 }
