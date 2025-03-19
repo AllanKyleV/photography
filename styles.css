@@ -221,6 +221,23 @@ h4 {
     border-radius: 10px;
 }
 
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 65px;
+    font-family: var(--font-default);
+}
+
+footer > nav a {
+    color: white;
+    font-size: 1rem;
+}
+
 /* Media Query for Responsiveness */
 @media (max-width: 768px) {
 
@@ -277,10 +294,9 @@ h4 {
     #contact input {
         width: 400px;
     }
-}
 
-
-/* Display: none; */
-footer {
-    display: none;
+    /* Footer */
+    footer nav ul {
+        display: flex;
+    }
 }
