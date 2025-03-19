@@ -194,7 +194,32 @@ h3 {
 }
 
 /* Contact Section */
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    font-family: var(--font-default);
+    gap: 20px;
+    height: 100vh;
+}
 
+h4 {
+    font-size: 30px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contact input {
+    width: 600px;
+    height: 35px;
+    border-radius: 10px;
+}
 
 /* Media Query for Responsiveness */
 @media (max-width: 768px) {
@@ -246,6 +271,11 @@ h3 {
 
     #portfolio {
         padding: 20px 50px;
+    }
+
+    /* Contact Section */
+    #contact input {
+        width: 400px;
     }
 }
 
